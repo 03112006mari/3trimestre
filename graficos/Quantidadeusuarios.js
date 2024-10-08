@@ -17,15 +17,15 @@ import {getcss } from "./common.js"
 }
 ]
     const layout = {
-    plot_bgcolor: getcss('--bg-color'), 
-    paper_bgcolor: getcss('--bg-color'),
+    plot_bgcolor: getCSS('--bg-color'), 
+    paper_bgcolor: getCSS('--bg-color'),
     title:{
         text: 'Redes sociais com mais usuarios',
         x: 0,
         font: {
-        color: getcss('--primary-color'),
+        color: getCSS('--primary-color'),
          size: 30,
-          font: getcss('--font')
+          font: getCSS('--font')
         }
         },
         xaxis: {
@@ -33,7 +33,7 @@ import {getcss } from "./common.js"
          title: {
         text: 'Nome das redes',
         font: {
-        color: getcss('--secondary-color')
+        color: getCSS('--secondary-color')
         }
         }
         },
