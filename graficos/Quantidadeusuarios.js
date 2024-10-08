@@ -18,9 +18,35 @@ import {getcss } from "./common.js"
 ]
     const layout = {
     plot_bgcolor: getcss('--bg-color'), 
-    paper_bgcolor: getcss('--bg-color')
+    paper_bgcolor: getcss('--bg-color'),
+    title:{
+        text: 'Redes sociais com mais usuarios',
+        x: 0,
+        font: {
+        color: getcss('--primary-color'),
+         size: 30,
+          font: getcss('--font')
+        }
+        },
+        xaxis: {
+        tickfont: tickConfig,
+         title: {
+        text: 'Nome das redes',
+        font: {
+        color: getcss('--secondary-color')
+        }
+        }
+        },
+        yaxis: {
+        tickfont: tickConfig,
+        title: {
+        text: 'Bilhões de usuários ativos',
+        font: {
+        color: getCSS('--secondary-color')
+        }
     }
-    
+}
+    }
     const grafico = document.createElement('div')
     grafico.className = 'grafico'
     document.getElementById('graficos-container').appendchild(grafico)
